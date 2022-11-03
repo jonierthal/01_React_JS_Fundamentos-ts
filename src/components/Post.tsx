@@ -51,7 +51,7 @@ export function Post({ author, publishedAt, content }: PostProps){
         setNewCommentText(event.target.value);
     }
 
-    function handleNewCommentInvalid(event: InvalidEvent<HTMLTextAreaElement){
+    function handleNewCommentInvalid(event: InvalidEvent<HTMLTextAreaElement>){
         event.target.setCustomValidity('Esse campo é obrigatório!');
     }
 
